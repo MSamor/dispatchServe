@@ -1,0 +1,382 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
+    <meta name="author" content="luosir">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <title>发文</title>
+    <!-- Icons -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/simple-line-icons.css" rel="stylesheet">
+    <!-- Main styles for this application -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden">
+    <header class="app-header navbar">
+        <!--移动端时出-->
+        <button class="navbar-toggler mobile-sidebar-toggler hidden-lg-up" type="button">☰</button>
+        <!--顶部左边导向 -->
+        <a class="navbar-brand" href="#"></a>
+        <ul class="nav navbar-nav hidden-md-down">
+            <li class="nav-item">
+                <a class="nav-link navbar-toggler sidebar-toggler" href="#">☰</a>
+            </li>
+            <li class="nav-item px-1">
+                <a class="nav-link" href="#">基础管理</a>
+            </li>
+            <li class="nav-item px-1">
+                <a class="nav-link" href="#">发文管理</a>
+            </li>
+            <li class="nav-item px-1">
+                <a class="nav-link" href="#">发文统计</a>
+            </li>
+            <li class="nav-item px-1">
+                <a class="nav-link" href="#">用户管理</a>
+            </li>
+        </ul>
+        <!--顶部右边导向-->
+        <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <!--用户头像-->
+                <a class="nav-link dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    <span class="hidden-md-down">admin</span>
+                </a>
+                <!--下拉-->
+                <div class="dropdown-menu dropdown-menu-right">
+                    <!--下拉标题-->
+                    <div class="dropdown-header text-center">
+                        <strong>Account</strong>
+                    </div>
+                    <a class="dropdown-item" href="#"><i class="fa fa-cog"></i>设置</a>
+                    <a class="dropdown-item" href="#"><i class="fa fa-circle-o-notch "></i> 退出系统</a>
+
+                </div>
+            </li>
+        </ul>
+    </header>
+    <!--左边导向-->
+
+    <div class="app-body">
+        <div class="sidebar">
+            <!--左边导向-->
+            <nav class="sidebar-nav">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="icon-speedometer"></i>发文管理 </a>
+                    </li>
+                    <!--<li class="nav-title">
+                        系统用户管理
+                    </li>-->
+                    <li class="nav-item nav-dropdown">
+                        <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-star"></i> AAAA</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Main content -->
+        <main class="main">
+
+            <!-- Breadcrumb -->
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">主页</li>
+                <li class="breadcrumb-item">
+                    <a href="#">发文统计</a>
+                </li>
+            </ol>
+
+
+            <div class="container-fluid">
+                <div class="animated fadeIn">
+
+                    <div class="row">
+                        <!--发文信息-->
+                        <div class="col-sm-8">
+                            <div class="card">
+                                <div class="card-header">
+                                    <strong>发文信息</strong>
+                                </div>
+                                <div class="card-block">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-group">
+                                                <label for="name">发文标题</label>
+                                                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/.row-->
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-group">
+                                                <label for="name">发文类型</label>
+                                                <select id="select" name="select" class="form-control form-control-sm">
+                                                    <option value="0">Please select</option>
+                                                    <option value="1">Option #1</option>
+                                                    <option value="2">Option #2</option>
+                                                    <option value="3">Option #3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/.row-->
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    发文文件
+                                                </div>
+                                                <div class="card-block">
+                                                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/.row-->
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    发文附件
+                                                </div>
+                                                <div class="card-block">
+
+                                                    <p>点击上传附件</p>
+
+                                                    <p>
+                                                        <button type="button" class="btn btn-sm btn-facebook" style="margin-bottom: 4px">
+                                                            <span>关于什么什么的一个文件.docx</span>
+                                                        </button>
+
+                                                        <button type="button" class="btn btn-danger btn-sm" style="margin-bottom: 4px">X</button>
+                                                    </p>
+                                                    <p>
+                                                        <button type="button" class="btn btn-sm btn-facebook" style="margin-bottom: 4px">
+                                                            <span>关于什么什么的一个文件.docx</span>
+                                                        </button>
+                                                        <button type="button" class="btn btn-danger btn-sm" style="margin-bottom: 4px">X</button>
+                                                    </p>
+                                                    是否允许下载附件：
+                                                    &nbsp;&nbsp;&nbsp;
+                                                    <label class="switch switch-3d switch-success">
+                                                        <input type="checkbox" class="switch-input" checked="">
+                                                        <span class="switch-label"></span>
+                                                        <span class="switch-handle"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/.row-->
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    接收文件人
+                                                </div>
+                                                <div class="card-block">
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <span>
+                                                        <button type="button" class="btn btn-sm btn-github" style="margin-bottom: 4px">
+                                                            <span>张三</span>
+                                                        </button>
+                                                        <button type="button" class="btn btn-danger btn-sm" style="margin-bottom: 4px">X</button>
+                                                    </span>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <span>
+                                                        <button type="button" class="btn btn-sm btn-github" style="margin-bottom: 4px">
+                                                            <span>张三</span>
+                                                        </button>
+                                                        <button type="button" class="btn btn-danger btn-sm" style="margin-bottom: 4px">X</button>
+                                                    </span>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <span>
+                                                        <button type="button" class="btn btn-sm btn-github" style="margin-bottom: 4px">
+                                                            <span>张三</span>
+                                                        </button>
+                                                        <button type="button" class="btn btn-danger btn-sm" style="margin-bottom: 4px">X</button>
+                                                    </span>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <span>
+                                                        <button type="button" class="btn btn-sm btn-github" style="margin-bottom: 4px">
+                                                            <span>张三</span>
+                                                        </button>
+                                                        <button type="button" class="btn btn-danger btn-sm" style="margin-bottom: 4px">X</button>
+                                                    </span>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <span>
+                                                        <button type="button" class="btn btn-sm btn-github" style="margin-bottom: 4px">
+                                                            <span>张三</span>
+                                                        </button>
+                                                        <button type="button" class="btn btn-danger btn-sm" style="margin-bottom: 4px">X</button>
+                                                    </span>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <span>
+                                                        <button type="button" class="btn btn-sm btn-github" style="margin-bottom: 4px">
+                                                            <span>张三</span>
+                                                        </button>
+                                                        <button type="button" class="btn btn-danger btn-sm" style="margin-bottom: 4px">X</button>
+                                                    </span>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/.row-->
+                                </div>
+                                <div class="card-footer">
+                                    <button type="submit" class="btn btn-sm btn-success"><i class="fa fa-dot-circle-o"></i> Submit</button>
+                                    <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--发文信息结束-->
+                        <!--选择收文件人-->
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <strong>选择收文人员</strong>
+                                </div>
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="timeline" role="tabpanel">
+                                        <!--群组-->
+                                        <div class="callout m-0 py-h text-muted text-center bg-faded text-uppercase">
+                                            <small>
+                                                <b style="color:#666666">收文群组</b>
+                                            </small>
+                                        </div>
+                                        <hr class="mx-1 my-0">
+                                        <div class="callout callout-warning m-0 py-1">
+                                            <div>
+                                                <input type="checkbox" id="checkbox1" name="checkbox1" value="option1">&nbsp;&nbsp;&nbsp; <strong>收文群组1</strong>
+                                            </div>
+                                        </div>
+                                        <hr class="mx-1 my-0">
+                                        <div class="callout callout-warning m-0 py-1">
+                                            <div>
+                                                <input type="checkbox" id="checkbox1" name="checkbox1" value="option1">&nbsp;&nbsp;&nbsp; <strong>收文群组1</strong>
+                                            </div>
+                                        </div>
+                                        <hr class="mx-1 my-0">
+                                        <div class="callout callout-warning m-0 py-1">
+                                            <div>
+                                                <input type="checkbox" id="checkbox1" name="checkbox1" value="option1">&nbsp;&nbsp;&nbsp; <strong>收文群组1</strong>
+                                            </div>
+                                        </div>
+                                        <hr class="mx-1 my-0">
+                                        <div class="callout callout-warning m-0 py-1">
+                                            <div>
+                                                <input type="checkbox" id="checkbox1" name="checkbox1" value="option1">&nbsp;&nbsp;&nbsp; <strong>收文群组1</strong>
+                                            </div>
+                                        </div>
+                                        <hr class="mx-1 my-0">
+                                        <div class="callout callout-warning m-0 py-1">
+                                            <div>
+                                                <input type="checkbox" id="checkbox1" name="checkbox1" value="option1">&nbsp;&nbsp;&nbsp; <strong>收文群组1</strong>
+                                            </div>
+                                        </div>
+                                        <hr class="mx-1 my-0">
+                                        <div class="callout callout-warning m-0 py-1">
+                                            <div>
+                                                <input type="checkbox" id="checkbox1" name="checkbox1" value="option1">&nbsp;&nbsp;&nbsp; <strong>收文群组1</strong>
+                                            </div>
+                                        </div>
+                                        <hr class="mx-1 my-0">
+                                        <div class="callout callout-warning m-0 py-1">
+                                            <div>
+                                                <input type="checkbox" id="checkbox1" name="checkbox1" value="option1">&nbsp;&nbsp;&nbsp; <strong>收文群组1</strong>
+                                            </div>
+                                        </div>
+                                        <hr class="mx-1 my-0">
+                                        <div class="callout callout-warning m-0 py-1">
+                                            <div>
+                                                <input type="checkbox" id="checkbox1" name="checkbox1" value="option1">&nbsp;&nbsp;&nbsp; <strong>收文群组1</strong>
+                                            </div>
+                                        </div>
+                                        <hr class="mx-1 my-0">
+                                        <div class="callout callout-warning m-0 py-1">
+                                            <div>
+                                                <input type="checkbox" id="checkbox1" name="checkbox1" value="option1">&nbsp;&nbsp;&nbsp; <strong>收文群组1</strong>
+                                            </div>
+                                        </div>
+                                        <hr class="mx-1 my-0">
+                                        <div class="callout callout-warning m-0 py-1">
+                                            <div>
+                                                <input type="checkbox" id="checkbox1" name="checkbox1" value="option1">&nbsp;&nbsp;&nbsp; <strong>收文群组1</strong>
+                                            </div>
+                                        </div>
+                                        <!--群组结束-->
+                                        <!--查询-->
+                                        <div class="callout m-0 py-h text-muted text-center bg-faded text-uppercase">
+                                            <small>
+                                                <b style="color:#666666">查询人员</b>
+                                            </small>
+                                        </div>
+                                        <p>
+                                            <div class="input-group">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-primary"><i class="fa fa-search"></i> Search</button>
+                                                </span>
+                                                <input type="text" id="input1-group2" name="input1-group2" class="form-control" placeholder="Username">
+                                            </div>
+                                        </p>
+
+                                        <p>
+                                            <button type="button" class="btn btn-sm btn-github" style="margin-bottom: 4px">
+                                                <span>张三</span>
+                                            </button>
+                                            <button type="button" class="btn btn-sm btn-github" style="margin-bottom: 4px">
+                                                <span>张三</span>
+                                            </button>
+                                            <button type="button" class="btn btn-sm btn-github" style="margin-bottom: 4px">
+                                                <span>张三</span>
+                                            </button>
+                                            <button type="button" class="btn btn-sm btn-github" style="margin-bottom: 4px">
+                                                <span>张三</span>
+                                            </button>
+                                        </p>
+
+                                        <!--查询结束-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--选择收文件人-->
+                    </div>
+                    <!--/.row-->
+
+                </div>
+
+            </div>
+            <!-- /.conainer-fluid -->
+        </main>
+    </div>
+
+    <footer class="app-footer">
+        <a href="#">LuoSir</a> © 2017 creativeLabs.
+        <span class="float-right">
+            xxxxxx <a href="#" target="_blank" title="xxxx">Luosir</a> - Collect from </a>
+        </span>
+    </footer>
+
+    <!-- Bootstrap and necessary plugins -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/tether/dist/js/tether.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/pace/pace.min.js"></script>
+    <!-- Plugins and scripts required by all views -->
+    <script src="bower_components/chart.js/dist/Chart.min.js"></script>
+    <!-- GenesisUI main scripts -->
+    <script src="js/app.js"></script>
+    <!-- Custom scripts required by this view -->
+    <script src="js/views/main.js"></script>
+</body>
+</html>
